@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gridstyle.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <div>
-            <h1>Drops</h1>
-        </div>
-        
-        <div><img src="assets/road1.jpg" alt="road1"></div>  
-        <div><img src="assets/road2.jpg" alt="road2"></div>  
-        <div><img src="assets/road3.jpg" alt="road3"></div>  
-        <div><img src="assets/road4.jpg" alt="road4"></div>  
-          
-        <div>
-            <li>Nikesh acharya</li>
-            <li>nikesh6598@gmail.com</li>
-        </div>
-    </div>
-</body>
-</html>
+body{
+    font-size: 14pt;
+    font-family: sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 3em;
+}
+
+img{
+    width:100%;
+
+}
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* Meaning--> please repeat 1fr for three times */
+    
+}
+.container div{
+    justify-self: center;
+    align-self: center;
+
+    /* contents will head out to its center */
+
+}
